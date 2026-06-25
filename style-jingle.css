@@ -63,63 +63,101 @@ main {
     background-color: #621010;
 }
 
-.intro-jingle {
+/*DESTAQUE*/
 
-    margin: 25px;
+.destaque {
+    width: 100%;
+    overflow: auto;
+}
+
+.img-destaque {
+    width: 850px;
+    float: left;
     padding: 25px;
 
-    border-radius: 10px;
+    background-color: #621010;
+}
 
-    transition: 0.3s;
+.img-destaque img {
+    width: 100%;
+    display: block;
+}
 
-    background-color: whitesmoke;
+.img-destaque figcaption {
+    text-align: center;
+    margin-top: 10px;
 
-
+    color: white;
 
 }
 
-.intro-jingle h2 {
+.info-destaque {
+    width: 350px;
+    float: right;
+    padding: 25px;
 
+    background-color: #621010;
+    color: white;
+}
+
+.info-destaque h2,
+.info-destaque strong {
     margin-bottom: 15px;
 
     color: rgb(191, 145, 7);
 }
 
-.intro-jingle:hover {
-    transform: scale(0.98);
-    box-shadow: 0 0 0 3px rgb(211, 162, 36);
+.info-destaque ul {
+    margin-bottom: 20px;
+
 }
 
-.jingle{
-    margin: 25px auto;
+.info-destaque li {
+    margin-bottom: 10px;
+}
+
+/*APRESENTAÇÃO E PROPOSTAS*/
+
+.apresentacao,
+.propostas {
+    clear: both;
+    margin: 25px;
     padding: 25px;
 
     border-radius: 10px;
 
-    transition: 0.3s;
-
     background-color: whitesmoke;
 
-    display: column;
-    flex-flow: row wrap;
-    justify-items: center;
-
-    width: 30%;
-    
-    
 }
 
-.jingle .letra-jingle {
-    justify-content: center;
-    
-}
+.apresentacao h2,
+.propostas h2 {
+    margin-bottom: 15px;
 
-.jingle .letra-jingle h2 {
     color: rgb(191, 145, 7);
 }
-    
 
-/* .jingle-container {
-    display: flex;
-    justify-content: center;
-} */
+.apresentacao,
+.propostas {
+    transition: 0.3s;
+}
+
+.apresentacao:hover,
+.propostas:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 0 3px rgb(211, 162, 36);
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 10px;
+
+    text-align: center;
+
+    background-color: #1f1f1f;
+    color: rgb(211, 162, 36);
+
+    font-weight: bold;
+}
